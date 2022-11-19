@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../../redux/store";
 import { EditPricingProps } from "../../../types/general.types";
 import lodash from "lodash";
-import { GlobalContext } from "../../../pages/_app";
 
 const EditPricing: FunctionComponent<EditPricingProps> = ({
   handleCurrencySubmit,
@@ -22,6 +21,7 @@ const EditPricing: FunctionComponent<EditPricingProps> = ({
   const productInfo = useSelector(
     (state: RootState) => state.app.selectedDropReducer
   );
+  console.log(ethConversion)
   return (
     <form
       className="relative w-full h-fit row-start-2 grid grid-flow-row auto-rows-[auto auto] pt-10 gap-4"

@@ -194,7 +194,7 @@ const useOrderValue = (): UseOrderValueResult => {
   const showCurrencyETH = (e: FormEvent) => {
     e.preventDefault();
     const ETHUSD = parseInt(
-      (lodash.chunk(data, 3)[0][2] as Array<any>)[0]._hex.toString()
+      (lodash.chunk(data, 3)[0][2] as Array<any>)[1]._hex.toString()
     );
     const ETHConversion =
       (e.target as HTMLFormElement).value /
