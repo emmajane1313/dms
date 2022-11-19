@@ -397,7 +397,7 @@ export type useDetailsResults = {
   handleAddressSubmit: () => void;
   paymentSuccess: boolean;
   setDetailsSuccess: (e: boolean) => void;
-  detailsSuccess: boolean;
+  detailsSuccess: boolean; 
   handleUpdateAmountSold: () => void;
 };
 
